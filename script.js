@@ -7,13 +7,13 @@ function compare()
     word = word.value;
     if(word.length != 7)
     {
-        alert("7 harfli kelime yaz!!! Berat ın BİR RİCASIDIR MUCK");
+        alert("5 harfli kelime yaz!!! Berat ın BİR RİCASIDIR MUCK");
         return true;
     }
     list = [];
-    for(var i = 0; i < 7; i++)
+    for(var i = 0; i < 5; i++)
     {
-        for(var j = 0; j < 7; j++)
+        for(var j = 0; j < 5; j++)
         {
             for(var y = 0; y < list.length; y++)
             {
@@ -48,27 +48,23 @@ function compare()
     }
     document.getElementById("tahmin").innerHTML += "<br>";
     x += 1;
+    if(x == 1)
+    {
+        document.getElementById("hak").innerHTML = 5-x + " Biraz daha düşün ";
+    }
     if(x == 2)
     {
-        document.getElementById("hak").innerHTML = 7-x + " Biraz daha düşün ";
+        document.getElementById("hak").innerHTML = 5-x + " Mantıklı şeyler yaz ";
     }
     if(x == 3)
     {
-        document.getElementById("hak").innerHTML = 7-x + " Canım dikkatlı ol ";
+        document.getElementById("hak").innerHTML = 5-x + " bak naneyi yicen ha ";
     }
     if(x == 4)
     {
-        document.getElementById("hak").innerHTML = 7-x + " OLm gidio haklar ";
+        document.getElementById("hak").innerHTML = 5-x + " AHA NANEYİ YEDİN MUCK ";
     }
     if(x == 5)
-    {
-        document.getElementById("hak").innerHTML = 7-x + " LAĞNNNN DüşüNSENE HIYAR MSIIN ";
-    }
-    if(x == 6)
-    {
-        document.getElementById("hak").innerHTML = 7-x + " NANEYİ YEdiN MUCK ";
-    }
-    if(x == 7)
     {
        alert("Bilemedin!!\nKelime: " + target);
     }
