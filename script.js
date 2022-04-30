@@ -1,5 +1,5 @@
 var x = 0;
-var target = "beratım";
+var target = "dahil";
 
 function compare()
 {
@@ -41,7 +41,7 @@ function compare()
             }
             else
             {
-                color = "black";
+                color = "red";
             }
         }
         document.getElementById("tahmin").innerHTML += "<font style='color: " + color + "; font-size: 25px;'>" + word[i] + "</font>";
@@ -50,21 +50,25 @@ function compare()
     x += 1;
     if(x == 1)
     {
-        document.getElementById("hak").innerHTML = 5-x + " Biraz daha düşün ";
+        document.getElementById("hak").innerHTML = 6-x + " Biraz daha düşün ";
     }
     if(x == 2)
     {
-        document.getElementById("hak").innerHTML = 5-x + " Mantıklı şeyler yaz ";
+        document.getElementById("hak").innerHTML = 6-x + " Mantıklı şeyler yaz ";
     }
     if(x == 3)
     {
-        document.getElementById("hak").innerHTML = 5-x + " bak naneyi yicen ha ";
+        document.getElementById("hak").innerHTML = 6-x + " bak naneyi yicen ha ";
     }
     if(x == 4)
     {
-        document.getElementById("hak").innerHTML = 5-x + " AHA NANEYİ YEDİN MUCK ";
+        document.getElementById("hak").innerHTML = 6-x + " Ramak kaldııı ";
     }
     if(x == 5)
+    {
+        document.getElementById("hak").innerHTML = 6-x + " AHA NANEYİ YEDİN MUCK ";
+    }
+    if(x == 6)
     {
        alert("Bilemedin!!\nKelime: " + target);
     }
