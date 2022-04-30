@@ -5,7 +5,7 @@ function compare()
 {
     word = document.getElementById("word");
     word = word.value;
-    if(word.length != 7)
+    if(word.length != 5)
     {
         alert("5 harfli kelime yaz!!! Berat ın BİR RİCASIDIR MUCK");
         return true;
